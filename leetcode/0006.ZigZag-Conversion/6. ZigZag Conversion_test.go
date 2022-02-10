@@ -51,3 +51,10 @@ func Test_Problem6(t *testing.T) {
 	}
 	fmt.Printf("\n\n\n")
 }
+
+func Test1(t *testing.T) {
+	s := "ABCD"
+	for _, i := range s {
+		fmt.Println(string(i))
+	}
+}
