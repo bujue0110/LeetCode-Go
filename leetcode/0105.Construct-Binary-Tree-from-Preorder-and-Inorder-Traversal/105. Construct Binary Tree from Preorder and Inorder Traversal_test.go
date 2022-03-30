@@ -40,7 +40,9 @@ func Test_Problem105(t *testing.T) {
 	for _, q := range qs {
 		_, p := q.ans105, q.para105
 		fmt.Printf("【input】:%v      ", p)
-		fmt.Printf("【output】:%v      \n", structures.Tree2ints(buildTree(p.preorder, p.inorder)))
+		tree2 := buildTree2(p.preorder, p.inorder)
+		fmt.Print(tree2)
+		//fmt.Printf("【output】:%v      \n", structures.Tree2ints())
 	}
 	fmt.Printf("\n\n\n")
 }
